@@ -1,0 +1,145 @@
+// out: null
+/*=======================================================================================
+Bootstrap Components
+=========================================================================================
+@import "@{bootstrap}variables";
+@import "@{bootstrap}mixins";
+@import "@{bootstrap}normalize";
+@import "@{bootstrap}scaffolding";
+@import "@{bootstrap}grid";
+@import "@{bootstrap}type";
+@import "@{bootstrap}responsive-utilities";
+@import "@{bootstrap}utilities";
+@import (less)"../../node_modules/corenav/coreNavigation.css";
+@import (less)"../../bower_components/lightgallery/dist/css/lightgallery.min.css";
+@import (less)"../../bower_components/lightgallery/dist/css/lg-transitions.min.css";
+@import (less)"../../bower_components/Bootsnav/css/bootstrap.min.css";
+@import (less)"../../bower_components/Bootsnav/css/animate.css";
+@import (less)"../../bower_components/Bootsnav/css/bootsnav.css";
+@import (less)"../../bower_components/Bootsnav/css/style.css";
+==========================================================================================
+
+==========================================================================================
+*/
+.reset();
+@import "_variables";
+@import "_helpers";
+
+/* Project Elements
+==============================
+==============================
+*/
+@import "_elements";
+
+/* Bower components import
+==============================
+==============================
+*/
+@import "../../bower_components/lesshat/less/shape";
+
+/* Vendor libs import
+==============================
+==============================
+*/
+@import (less) "libs/font-awesome.css";
+@import "libs/fonts";
+@import (less)"libs/icomoon.css";
+@import "libs/myFrameworks/my2";
+@import "libs/smart-grid";
+
+/* Pages import
+==============================
+==============================
+*/
+@import "pages/home";
+@import "pages/header";
+@import "pages/navigation";
+@import "pages/banner";
+@import "pages/about";
+@import "pages/skills";
+@import "pages/quote";
+
+*, *:before,
+*, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  .openSans();
+  .rem-size(16);
+  .line-height-rem(28);
+  color: #737373;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+h1 {
+  .h1-fontSize;
+}
+
+h2 {
+  .h2-fontSize;
+}
+
+h3 {
+  .h3-fontSize;
+}
+
+h4 {
+  .h4-fontSize;
+}
+
+h5 {
+  .h5-fontSize;
+}
+
+h6 {
+  .h6-fontSize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .openSans(700);
+}
+
+/*
+.debug {
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+*/
+
+html {
+  box-sizing: border-box;
+
+  .html-fz(16);
+
+  .sm-block({
+      .html-fz(15);
+  });
+
+  .xs-block({
+      .html-fz(14);
+  });
+
+  .xxs-block({
+    .html-fz(13);
+  });
+}
+
+.wrapper {
+    .wrapper();
+}

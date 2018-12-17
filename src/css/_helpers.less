@@ -1,0 +1,117 @@
+// out: null
+
+.rem(@px){
+  font-size: @px/16px + 0rem;
+}
+
+.line-height(@px){
+  line-height: @px/16;
+}
+
+.dib-mid(){
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dib-top(){
+    display: inline-block;
+    vertical-align: top;
+}
+.rel() {
+    position: relative;
+}
+
+.square(@s:50px;@bgc: #ccc;) {
+    width: @s;
+    height: @s;
+    background-color: @bgc;
+}
+.circle(@s:50px; @bgc: #ccc;){
+    display: block;
+    width: @s;
+    height: @s;
+    border-radius: @s/2;
+    background-color: @bgc;
+}
+
+.text-bold() {
+    font-weight: bold;
+}
+.display-centerer-XY(@posX:50%;@posY:50%){
+    position: absolute;
+    left: @posX;
+    top: @posY;
+    transform: translateX(50%);
+}
+
+.display-centerer-Y(@posY:50%){
+    position: absolute;
+    top: @posY;
+    transform: translateY(50%);
+}
+.display-centerer-X(@posX:50%){
+    position: absolute;
+    left: @posX;
+    transform: translateX(50%);
+}
+
+.display-centerer-Y(@posY:50%){
+    position: absolute;
+    top: @posY;
+    transform: translateY(50%);
+}
+
+.montserrat(@font-weight:normal){
+  font-family: "Montserrat";
+  font-weight: @font-weight;
+}
+
+.crimson(@font-weight:normal) {
+  font-family: "Crimson Text";
+  font-weight: @font-weight;
+}
+
+.triangle-top(@borW: 30px; @borColor: #FFFFFF; @posY:-59px;){
+    border: @borW solid transparent;
+    border-bottom: @borW solid @borColor;
+    top: @posY;
+}
+
+.triangle-bottom(@borW: 30px; @borColor: #FFFFFF; @posY:-59px;){
+    border: @borW solid transparent;
+    border-top: @borW solid @borColor;
+    bottom: @posY;
+}
+
+.triangle-left(@borW: 30px; @borColor: #FFFFFF; @posX:-59px;){
+    border: @borW solid transparent;
+    border-right: @borW solid @borColor;
+    right: @posX;
+}
+
+.triangle-right(@borW: 30px; @borColor: #FFFFFF; @posX:-59px;){
+    border: @borW solid transparent;
+    border-left: @borW solid @borColor;
+    left: @posX;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+.quote {
+  .min-height(700);
+  background: #23251D  url(../i/bg-i/quote-bg.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 250px 0;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quote__block {
+  text-align: center;
+}
+
+.quote__block-content {
+  .openSans(700);
+  .rem-size(45);
+  .line-height-rem(60);
+  color: #ffffff;
+  padding: 0 70px;
+  margin-bottom: 25px;
+  .display-container();
+
+  &::before {
+    content: " "" ";
+    display: block;
+    .openSans(700);
+    .rem-size(110);
+    .line-height-rem(30);
+    .display-topleft();
+  }
+
+  &::after {
+    content: " "" ";
+    display: block;
+    .openSans(700);
+    .rem-size(110);
+    .line-height-rem(60);
+    .display-topright();
+  }
+}
+
+.quote__block-author {
+  .openSans(700);
+  .rem-size(24);
+  .line-height-rem(30);
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 20px;
+  .display-container();
+
+ &::before {
+   content: "";
+   display: block;
+   width: 50px;
+   height: 4px;
+   background-color: #f39c12;
+   .display-topmiddle();
+ }
+}
