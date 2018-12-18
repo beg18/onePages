@@ -38,12 +38,26 @@ Table of Content
   }
 }
 
+.section-bg {
+  .height(700);
+  background: #23251D  url(../i/bg-i/quote-bg.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 250px 0;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .section__header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 130px;
-  padding: 0 70px;
+  //margin-bottom: 150px;
+  //padding: 0 70px;
+  max-width: 90%;
+  margin: 0 auto 150px;
 }
 
 .section__title {
@@ -83,6 +97,7 @@ Table of Content
   .shift-right(1);
   .circle-wrap(150);
   border: 2px solid white;
+  flex: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,3 +138,31 @@ Table of Content
   .size(6);
 }
 
+.team__wrap {
+  .row-flex();
+  justify-content: space-between;
+}
+
+.team__inner {
+  .col();
+  .size(3);
+}
+
+.facts__wrap {
+  .row-flex();
+  justify-content: space-between;
+}
+
+.facts__inner {
+  .col();
+  .size(3);
+}
+
+.services__wrap {
+  .row-flex();
+}
+
+.services__inner {
+  .col();
+  .size(4);
+}

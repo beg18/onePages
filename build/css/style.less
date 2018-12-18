@@ -41,7 +41,7 @@ Bootstrap Components
 ==============================
 ==============================
 */
-@import (less) "libs/font-awesome.css";
+@import (less) "../../bower_components/font-awesome-4.2.0/css/font-awesome.min.css";
 @import "libs/fonts";
 @import (less)"libs/icomoon.css";
 @import "libs/myFrameworks/my2";
@@ -58,6 +58,9 @@ Bootstrap Components
 @import "pages/about";
 @import "pages/skills";
 @import "pages/quote";
+@import "pages/team";
+@import "pages/facts";
+@import "pages/services";
 
 *, *:before,
 *, *:after {
@@ -76,6 +79,7 @@ body {
   .rem-size(16);
   .line-height-rem(28);
   color: #737373;
+  .white();
 }
 
 header,
@@ -142,4 +146,5 @@ html {
 
 .wrapper {
     .wrapper();
+     width: 100%;
 }
