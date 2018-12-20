@@ -1,0 +1,136 @@
+.price-card {
+  .min-height(550);
+  align-items: center;
+}
+
+
+.pricing__panel {
+  text-align: center;
+  .white();
+
+  &:first-child {
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &:last-child {
+    border-right: 1px solid #e6e6e6;
+  }
+}
+
+.pricing__panel-active {
+  border-left: none;
+  border-right: none;
+  border-top: 17px solid #f39c12 !important;
+  border-bottom: 12px solid #e6e6e6 !important;
+  border-right: none;
+  border-left: none;
+
+  .pricing__heading {
+    background-color: #f39c12;
+    position: relative;
+    z-index: 10;
+  }
+  .pricing__title {
+    color: #ffffff;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+  .pricing__descr {
+    color: #ffffff;
+  }
+  .pricing__contents {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .pricing__contents-item {
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    &:nth-child(odd) {
+      background-color: #e6e6e6;
+    }
+  }
+  .pricing__footer {
+    height: 120px;
+    background-color: #e6e6e6;
+  }
+}
+
+.pricing__heading {
+  padding: 25px;
+}
+
+.pricing__title {
+  .openSans(700);
+  .rem-size(22);
+  .line-height-rem(25);
+  color: #0d0d0d;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #f39c12;
+    margin: 15px auto;
+  }
+}
+
+.pricing__descr {
+  &:extend(.pricing__title);
+}
+
+.pricing__contents {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.pricing__contents-item {
+  display: block;
+  border-top: 1px solid #e6e6e6;
+  padding: 17px 0;
+  .openSans();
+  .rem-size(15);
+  .line-height-rem(24);
+  color: #737373;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &:nth-child(odd) {
+    background-color: #fafafa;
+  }
+}
+
+.pricing__footer {
+  padding: 33px 0;
+  display: flex;
+}
+
+.card-btn {
+  margin: auto;
+  .dib-mid();
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border: 2px solid #f39c12;
+  .rem-size(16);
+  color: #0d0d0d;
+  text-transform: uppercase;
+  .transition();
+
+  &:hover {
+    color: #ffffff;
+  }
+}

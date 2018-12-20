@@ -38,6 +38,21 @@ Table of Content
   }
 }
 
+.btn-card {
+  border: 2px solid #f39c12;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #0d0d0d;
+  text-transform: uppercase;
+  .transition();
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
 .section-bg {
   .height(700);
   background: #23251D  url(../i/bg-i/quote-bg.jpg) no-repeat center top;
@@ -165,4 +180,40 @@ Table of Content
 .services__inner {
   .col();
   .size(4);
+}
+
+.price__wrap {
+  .row-flex();
+  justify-content: space-between;
+}
+
+.price__inner-big {
+  .col();
+  .size(4);
+}
+
+.price__inner {
+  .col();
+  .size(8);
+}
+
+.price-card__wrap {
+  .row-flex();
+  justify-content: center;
+}
+
+.price-card__inner {
+  .col-padding();
+  margin-left: -15px;
+  margin-right: -15px;
+  .size(4);
+
+ &:first-child {
+    margin-top: 17px;
+  }
+
+  &:last-child {
+    margin-top: 17px;
+  }
+
 }
